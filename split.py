@@ -1,3 +1,4 @@
+# 1st code with josh's approach
 class Solution(object):
     def reverseWords(self, s):
         break_down = s.split()
@@ -8,6 +9,8 @@ class Solution(object):
         s = "Habari yako" # 'Habari', 'Yako'
         reversed_sent = reverseWords(s)
         print(reversed_sent)
+
+# 2nd code with Kristian and Ngatia's approach
 
 class Solution(object):
     def reverseWords(self, s):
