@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Global_CSS/navbar_style.css" />
+    <link rel="stylesheet" href="Shop_Catalogue.css">
+    <link rel="shortcut icon" href="/Images/PEAKWAYS_LOGO.png" type="image/x-icon">
+    <title>Peakways Printers</title>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+              <a href="/1.Home/Home.html">
+                <img src="/Images/PEAKWAYS_LOGO.png" alt="PEAKWAYS_LOGO" class="Actual_logo">
+                Printers
+              </a>
+            </div>
+                <ul class="links">
+                    <li><a href="/1.Home/Home.html">Home</a></li>
+                    <li><a href="/2.About/About.html">About</a></li>
+                    <li><a href="/3.Shop/Shop.html">Shop</a></li>
+                    <li><a href="/4.Contact/Contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="Action_button">Get started</a>
+                <div class="Toggle_button">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+        </div>
+        <div class="Dropdown_menu open">
+          <li><a href="/1.Home/Home.html">Home</a></li><hr>
+          <li><a href="/2.About/About.html">About</a></li><hr>
+          <li><a href="/3.Shop/Shop.html">Shop</a></li><hr>
+          <li><a href="/4.Contact/Contact.html">Contact</a></li><hr>
+          <li><a href="#" class="Action_button">Get started</a></li>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>
+          Shop
+        </h1>
+        <div class="container">
+          <div class="title">PRODUCT LIST</div>
+          <div class="listProduct">
+  
+          </div>
+        </div>
+  
+      
+  
+      <script>
+          let products = null;
+          // get datas from file json
+          fetch('products.json')
+              .then(response => response.json())
+              .then(data => {
+                  products = data;
+                  addDataToHTML();
+          })
+  
+          function addDataToHTML(){
+      // remove datas default from HTML
+          let listProductHTML = document.querySelector('.listProduct');
+  
+          // add new datas
+          if(products != null) // if has data
+          {
+              products.forEach(product => {
+                  let newProduct = document.createElement('a');
+                  newProduct.href = '/3.Shop/detail.html?id=' + product.id;
+                  newProduct.classList.add('item');
+                  newProduct.innerHTML = 
+                  `<img src="${product.image}" alt="">
+                  <h2>${product.name}</h2>
+                  <div class="price">KES ${product.price}</div>`;
+                  listProductHTML.appendChild(newProduct);
+  
+              });
+          }
+      }
+  
+      </script>
+      </section>
+    </main>
+
+    <script>
+      const ToggleButton = document.querySelector('.Toggle_button')
+      const ToggleButtonIcon = document.querySelector('.Toggle_button i')
+      const DropdownMenu = document.querySelector('.Dropdown_menu')
+
+      ToggleButton.onclick = function () {
+        DropdownMenu.classList.toggle('open')
+        const isOpen = DropdownMenu.classList.contains('open')
+
+        ToggleButtonIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+  </body>
+</html>
+<a href=""></a>

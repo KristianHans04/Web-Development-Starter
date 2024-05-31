@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":" T-Shirt",
+        "price": 600,
+        "image": "/Images/Mockup_Tshirt.png",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti praesentium nesciunt modi vel. Ex sequi unde, repudiandae maxime neque inventore itaque repellat iste odit tempora sed totam iusto dolores?"
+    },
+    {
+        "id": 2,
+        "name":" Mug",
+        "price": 300,
+        "image": "/Images/Mockup_Mug.png",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti praesentium nesciunt modi vel. Ex sequi unde, repudiandae maxime neque inventore itaque repellat iste odit tempora sed totam iusto dolores?"
+    },
+    {
+        "id": 3,
+        "name":" Lanyard",
+        "price": 25,
+        "image": "/Images/Mockup_Lanyard.png",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti praesentium nesciunt modi vel. Ex sequi unde, repudiandae maxime neque inventore itaque repellat iste odit tempora sed totam iusto dolores?"
+    },
+    {
+        "id": 4,
+        "name":" Exam Printing",
+        "price": 10,
+        "image": "/Images/Mockup_Exams.png",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti praesentium nesciunt modi vel. Ex sequi unde, repudiandae maxime neque inventore itaque repellat iste odit tempora sed totam iusto dolores?"
+    },
+    {
+        "id": 5,
+        "name":" Billboard Printing",
+        "price": 10000,
+        "image": "/Images/Mockup_Billboard.png",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti praesentium nesciunt modi vel. Ex sequi unde, repudiandae maxime neque inventore itaque repellat iste odit tempora sed totam iusto dolores?"
+    }
+    
+]
