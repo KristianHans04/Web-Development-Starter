@@ -1,0 +1,206 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fbffde, #ecf9c4, #e4fbac, #b5d456);
+}
+
+/* Header styles for logo and company name */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px; /* space to adjust between the logo and peakways name */
+}
+
+nav {
+    /*background: linear-gradient(to right, #fbffde, #ecf9c4, #e4fbac, #b5d456);*/
+    color: #1a1818;
+    padding: 10px;
+    text-align:right;
+}
+
+nav a {
+    color: #0c0b0b;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px; /* the space between line and company name na logoo */
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    /*background-image: url();
+    /*background-size: cover; */
+}
+
+.contact .detail {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .detail h2 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.contact .detail p {
+    font-weight: 300;
+    color: #000000;
+}
+
+.holder-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 50px; /* Space between columns */
+}
+
+.holder-cont .contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.holder-cont .contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.holder-cont .contact-info .box .short-icon {
+    min-width: 60px;
+    height: 60px;
+    background: #c56666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: rgb(168, 168, 20);
+} 
+
+.holder-cont .contact-info .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(168, 168, 20);
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.holder-cont .contact-info .box .text h3 {
+    font-weight: 500;
+    color: #d80000;
+}
+
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span
+{
+    color: #e91ee9;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+    width: 100px;
+    background: #305b46;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .holder-cont
+    {
+        flex-direction: column;
+    }
+    .holder-cont .contact-info
+    {
+        margin-bottom: 40px;
+    }
+    .holder-cont .contact-info
+    {
+        width: 100%;
+    }
+}
