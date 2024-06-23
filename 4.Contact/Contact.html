@@ -4,29 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peakways Printers</title>
-    <link rel="shortcut icon" href="/Images/PEAKWAYS_LOGO.png" type="image/x-icon">
-    <!-- Include jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
-    <!-- Include header -->
-    <div id="header"></div>
-    <script>
-        $(document).ready(function(){
-            $("#header").load("/Global_HTML/Header.html");
-        });
-    </script>
-
-    <main>
-      <section id="hero">
-        <h1>
-          Contact Us
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sunt architecto ut beatae dicta, ad vel tempore cupiditate ducimus suscipit deserunt, laudantium ipsam rem asperiores cum animi facilis doloremque est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde optio neque vel. Itaque officiis doloremque nihil voluptas voluptatibus fugit! Hic, laboriosam. Ratione vitae repellat dolorem reiciendis inventore asperiores error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem accusantium officiis temporibus asperiores sit voluptatibus tempora natus ex id reiciendis modi qui, dolor dicta rerum aperiam, fugit sapiente magni commodi. 
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia fugit obcaecati eaque voluptas ex ullam modi ratione aliquid explicabo quos minima repellendus, adipisci sit, eligendi, inventore qui soluta reiciendis sed.
-        </p>
-      </section>
-    </main>
+    <header class="header">
+        <img src="PEAKWAYS_LOGO.png" alt="Peakways Logo" class="logo">
+        <h1 class="company-name"><b>PEAKWAYS <br> PRINTERS</b></h1>
+    </header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SHOP</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <hr class="divider">
+    <section class="contact">
+        <div class="detail">
+            <h2><b>Contact Us</b> </h2>
+            <p>At Peakways Printers, we specialize in the customization of a wide range of products for school institutions, including books, lab coats, lanyards, pens, billboards, cups, and school uniforms. Our dedicated team is committed to providing high-quality, personalized items that meet your institution's unique needs. To discuss your customization requirements or to get a quote, please contact us using the details given below or fill out the contact following form on this website. We look forward to partnering with you to create exceptional, customized products for your school or any other institution.</p>
+        </div>
+        <div class="holder-cont">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="short-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1234 Luthuli Street <br> Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="short-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0712345678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="short-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@PeakwaysPrinters01.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <h2>Send a message</h2>
+                    <div class="input-box">
+                        <input type="text" name="fullname" required="required">
+                        <span>FULL NAME</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required="required">
+                        <span>YOUR EMAIL</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="subject" required="required">
+                        <span>SUBJECT</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" required="required"></textarea>
+                        <span>TYPE MESSAGE...</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
