@@ -1,0 +1,45 @@
+ 
+ body {
+    font-family: ALGERIAN;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagesN/back.png);
+    background-size: cover;
+}
+
+h2{
+    color: rgb(25, 135, 25);
+}
+header {
+    color: #0a0909;
+    padding: 10px;
+    text-align: right;
+    background-image: url(imagesN/back.png);
+    background-size: cover;
+    overflow: hidden;
+    text-align: left;
+}
+
+nav {
+    color: #1a1818;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a:hover {
+            text-decoration: underline;
+        }
+    
+section {
+    padding: 20px;
+    text-align: left;
+}
+
+.ima{
+    width: 800px;
+}
+
+.imr{
+    float: right;
+    width: 200px;
+}
