@@ -1,9 +1,8 @@
- 
  body {
     font-family: ALGERIAN;
     margin: 0;
     padding: 0;
-    background-image: url(imagesN/back.png);
+    background-image: url(/Images/Background_Gradient_Image.png);
     background-size: cover;
 }
 
@@ -14,7 +13,7 @@ header {
     color: #0a0909;
     padding: 10px;
     text-align: right;
-    background-image: url(imagesN/back.png);
+    background-image: url(/Images/Background_Gradient_Image.png);
     background-size: cover;
     overflow: hidden;
     text-align: left;
