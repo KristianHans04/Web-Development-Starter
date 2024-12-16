@@ -1,5 +1,3 @@
----
-
 # 🛒 Web Development Starter
 
 **An Online Shop and Services Platform for a Printing Business**  
